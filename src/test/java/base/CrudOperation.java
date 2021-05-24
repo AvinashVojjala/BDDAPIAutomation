@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import resources.APIResources;
 import utilities.PropertiesReader;
+import org.junit.Assert;
 
 public class CrudOperation  {
 	static PropertiesReader pro = new PropertiesReader();
@@ -21,11 +22,8 @@ public class CrudOperation  {
 		RequestSpecification request = RestAssured.given();		 
 		APIResources resourceAPI= APIResources.valueOf(apiName);
 		request.header("Content-Type", "application/json");
-		System.out.println("The req is :" +req);
-		System.out.println("The resourceAPI.getResource() is :" +resourceAPI.getResource());
-
 		response = request.body(req).post(resourceAPI.getResource());
-		System.out.println("The reee is :" +response.asString());
+		Assert.assertEquals(response.getStatusCode(), 200); 
 		return response;
 	}
 	
@@ -34,8 +32,7 @@ public class CrudOperation  {
 		RequestSpecification request = RestAssured.given();		 
 		APIResources resourceAPI= APIResources.valueOf(apiName);
 		response = request.get(resourceAPI.getResource());
-		System.out.println("The reee is :" +response.asString());
-
+		Assert.assertEquals(response.getStatusCode(), 200); 
 		return response;
 	}
 

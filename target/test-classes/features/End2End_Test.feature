@@ -3,7 +3,6 @@ Feature: End to End Test
   
 Description: To cover the end to end testing
 
-
 Background: User generates token for authorization
 		Given I am an authorized user
 
