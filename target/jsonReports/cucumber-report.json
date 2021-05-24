@@ -1,0 +1,205 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "User generates token for authorization",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3652000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am an authorized user",
+            "match": {
+              "location": "stepdef.End2End_Test.iAmAnAuthorizedUser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-22T10:39:43.870Z",
+        "line": 11,
+        "name": "Authorized user is able to Add and Remove a book.",
+        "description": "",
+        "id": "end-to-end-test;authorized-user-is-able-to-add-and-remove-a-book.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1100000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "A list of books are available",
+            "match": {
+              "location": "stepdef.End2End_Test.listOfBooksAreAvailable()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1095000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I add a book to my reading list",
+            "match": {
+              "location": "stepdef.End2End_Test.addBookInList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c201\u003e but was:\u003c401\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:555)\r\n\tat org.junit.Assert.assertEquals(Assert.java:542)\r\n\tat stepdef.End2End_Test.bookIsAdded(End2End_Test.java:73)\r\n\tat ✽.The book is added(file:///C:/Users/1025226/PycharmProjects/vojjalaautomation/git/RestasssuredBDDFramework/src/test/java/features/End2End_Test.feature:14)\r\n",
+              "duration": 7000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "The book is added",
+            "match": {
+              "location": "stepdef.End2End_Test.bookIsAdded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I remove a book from my reading list",
+            "match": {
+              "location": "stepdef.End2End_Test.removeBookFromList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The book is removed",
+            "match": {
+              "location": "stepdef.End2End_Test.bookIsRemoved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "End to End Test",
+    "description": "Description: To cover the end to end testing\n\nBook Store Swagger URL: http://bookstore.toolsqa.com/swagger/index.html",
+    "id": "end-to-end-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/End2End_Test.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-22T10:39:49.926Z",
+        "line": 4,
+        "name": "Test Add Place",
+        "description": "",
+        "id": "test-add-and-delete-place-of-google-map;test-add-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot get property \u0027assertionClosure\u0027 on null object\r\n\tat org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:60)\r\n\tat org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:192)\r\n\tat org.codehaus.groovy.runtime.callsite.NullCallSite.getProperty(NullCallSite.java:46)\r\n\tat org.codehaus.groovy.runtime.callsite.GetEffectivePogoFieldSite.callGetProperty(GetEffectivePogoFieldSite.java:41)\r\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1653)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\r\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\r\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\r\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\r\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)\r\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\r\n\tat base.CrudOperation.performGETcall(CrudOperation.java:52)\r\n\tat stepdef.GoogleMap.user_calls_request_with_http_request(GoogleMap.java:30)\r\n\tat ✽.User calls \"DummyAPI\" with \"GET\" http request(file:///C:/Users/1025226/PycharmProjects/vojjalaautomation/git/RestasssuredBDDFramework/src/test/java/features/EndTwoEnd_Test.feature:5)\r\n",
+              "duration": 40000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User calls \"DummyAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DummyAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdef.GoogleMap.user_calls_request_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Test Add and Delete place of google map",
+    "description": "",
+    "id": "test-add-and-delete-place-of-google-map",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/EndTwoEnd_Test.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-22T10:39:49.978Z",
+        "line": 4,
+        "name": "Test Add Place",
+        "description": "",
+        "id": "test-add-and-delete-place-of-google-map;test-add-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot get property \u0027assertionClosure\u0027 on null object\r\n\tat org.codehaus.groovy.runtime.NullObject.getProperty(NullObject.java:60)\r\n\tat org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:192)\r\n\tat org.codehaus.groovy.runtime.callsite.NullCallSite.getProperty(NullCallSite.java:46)\r\n\tat org.codehaus.groovy.runtime.callsite.GetEffectivePogoFieldSite.callGetProperty(GetEffectivePogoFieldSite.java:41)\r\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1653)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\r\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\r\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\r\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\r\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)\r\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\r\n\tat base.CrudOperation.performGETcall(CrudOperation.java:52)\r\n\tat stepdef.GoogleMap.user_calls_request_with_http_request(GoogleMap.java:30)\r\n\tat ✽.User calls \"DummyAPI\" with \"GET\" http request(file:///C:/Users/1025226/PycharmProjects/vojjalaautomation/git/RestasssuredBDDFramework/src/test/java/features/GoogleMap.feature:5)\r\n",
+              "duration": 4000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User calls \"DummyAPI\" with \"GET\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DummyAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdef.GoogleMap.user_calls_request_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Test Add and Delete place of google map",
+    "description": "",
+    "id": "test-add-and-delete-place-of-google-map",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GoogleMap.feature",
+    "tags": []
+  }
+]
