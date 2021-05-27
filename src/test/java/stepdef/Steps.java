@@ -17,16 +17,17 @@ public class Steps extends CrudOperation{
 	public void user_calls_request_with_http_request(String apiName, String requestType) throws Exception {
 		JSONObject requestParams = new JSONObject();
 		
-		requestParams.put("userId", 11);
-		requestParams.put("id", 12);
-		requestParams.put("title", "Avinash");
-		requestParams.put("completed", false);
+		requestParams.put("name", "ALL");
+		requestParams.put("type", "MappingTable");
 
 		if(requestType.equalsIgnoreCase("POST")) {
 			
-			response = performPOSTcall(apiName, requestParams);
+			response = performPOSTcall("testuser", "Testing#123",apiName, requestParams);
+			System.out.println("response  is " + response.asString());
+
 		} else if(requestType.equalsIgnoreCase("GET")) {
-		 			response = performGETcall(apiName);
+		 			response = performGETcall("testuser", "Testing#123", apiName);
+		 			
 		}
 	}
 	

@@ -2,4 +2,4 @@ Feature: Sample test
 
 	@AddPlace
 	Scenario: Test Add Place
-	    Given User calls "POSTAPI" with "POST" http request
+	    Given User calls "SearchCatalog" with "POST" http request
